@@ -1,7 +1,7 @@
 # vanee-controller
 raspberry pi relay controller for a vanee air exchanger
 
-This is a simple project to keep an old unsupported vanee usable. The circuit board in it fried and no replacements parts are available, so we're faking it with a raspberry pi. The house is wired with buttons that would trigger the air exchanger to run at high speed for a time. The blower motor has separate wires for low, medium, and high speed. We'll just use low and high, connected to a relay expansion board on a raspberry pi. 
+This is a simple project to keep an old unsupported vanee usable. The circuit board in it fried and no replacements parts are available, so we're faking it with a raspberry pi. The house is wired with buttons that would trigger the air exchanger to run at high speed for a time. The blower motor has separate wires for low, medium, and high speed. We'll just use low and high, connected to a relay expansion board (RPi Relay Board: https://www.amazon.com/dp/B07CZL2SKN) on a raspberry pi 3. 
 
 The relay board uses BCM pin 25 / board pin 37 to control the channel 1 relay. So we use that as an output pin in the controller program when we want to switch from low to high speed. 
 
