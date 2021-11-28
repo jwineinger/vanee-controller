@@ -1,0 +1,11 @@
+# systemd service
+# /lib/systemd/system/vanee.service
+[Unit]
+Description=Control the Vanee
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/vanee_controller.py
+
+[Install]
+WantedBy=multi-user.target
