@@ -17,6 +17,7 @@ HIGH_TIME_STEP = timedelta(minutes=15)
 RELAY_PIN = 37
 INPUT_PIN = 7
 
+# remap relay states so that the "reset" state when GPIO.cleanup() is called is low speed
 RELAY_LOW_STATE = GPIO.HIGH
 RELAY_HIGH_STATE = GPIO.LOW
 
